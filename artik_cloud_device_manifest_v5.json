@@ -1,0 +1,48 @@
+{
+  "fields": [
+    {
+      "name": "ledState",
+      "type": "CUSTOM",
+      "valueClass": "Boolean",
+      "isCollection": false,
+      "description": "LED on/off state",
+      "tags": [],
+      "isSensitive": false
+    },
+    {
+      "name": "ledPosition",
+      "type": "CUSTOM",
+      "valueClass": "String",
+      "isCollection": false,
+      "description": "Position of LED formatted in binary string",
+      "tags": [],
+      "isSensitive": false
+    }
+  ],
+  "actions": [
+    {
+      "name": "startAnalysis",
+      "description": "take photo and analyze",
+      "parameters": [
+        {
+          "name": "user_id",
+          "type": "CUSTOM",
+          "valueClass": "String"
+        }
+      ],
+      "isStandard": false,
+      "type": "CUSTOM"
+    },
+    {
+      "name": "turnOnLED",
+      "description": "Turn On LED",
+      "type": "CUSTOM"
+    },
+    {
+      "name": "turnOffLED",
+      "description": "Turn off LED",
+      "type": "CUSTOM"
+    }
+  ],
+  "messageFormat": "json"
+}
